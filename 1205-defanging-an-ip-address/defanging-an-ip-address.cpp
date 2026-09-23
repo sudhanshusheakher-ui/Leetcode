@@ -2,13 +2,13 @@ class Solution {
 public:
     string defangIPaddr(string address) {
         string newaddress;
-        for(int  i=0;i<address.size();i++){
-            if(address[i]=='.'){
+        for(char c :address){
+            if(c=='.'){
                 
                 newaddress+="[.]";
 
             }else{
-            newaddress +=address[i];
+            newaddress +=c;
             }
         }
 
