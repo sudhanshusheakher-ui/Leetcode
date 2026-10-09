@@ -5,8 +5,7 @@ public:
         long long a=1;
         ans.push_back(1);
         for(int i=1;i<=rowIndex;i++){
-           a=a*(rowIndex-i+1);
-           a=a/(i);
+           a=a*(rowIndex-i+1)/i;
            ans.push_back(a);
 
         }
